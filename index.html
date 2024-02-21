@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://images.unsplash.com/photo-1661246458236-0c9dc2f74672?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <div class="header-nowPlaying">
+                    <h3 class="header-nowPlaying-title">Now Playing</h3>
+                    <p class="header-nowPlaying-content">Sting 57th & 9th</p>
+                </div>
+            </div>
+        </header>
+    
+        <div class="main">
+            <div class="main-img">
+                <img src="pic/picmain.png" alt="">
+            </div>
+            <div class="main-time"></div>
+            <input type="range" value="100" step="1" min="0" max="100" id="" class="main-range">
+            <div class="main-control">
+                <div class="main-control-repeat">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                </div>
+                <div class="main-control-back">
+                    <ion-icon name="play-back-circle-outline"></ion-icon>
+                </div>
+                <div class="main-control-pause none">
+                    <ion-icon name="pause-outline"></ion-icon>
+                </div>
+                <div class="main-control-play">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+                <div class="main-control-next">
+                    <ion-icon name="play-skip-forward-circle-outline"></ion-icon>
+                </div>
+                <div class="main-control-random">
+                    <ion-icon name="shuffle-outline"></ion-icon>
+                </div>
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

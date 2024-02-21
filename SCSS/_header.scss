@@ -1,0 +1,37 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    padding-bottom: 30px;
+    background-color: #00fffe33;
+    overflow: hidden;
+    z-index: 100;
+}
+.header {
+    width: 100%;
+    top: 0;
+    @include flexCenter("center");
+    z-index: 10;
+    background-color: rgba(0,255,255,1);
+    &-arrowDown , &-plus{
+        color: $headerColor;
+        font-size: 28px;
+        margin: 0 12px;
+        cursor: pointer;
+    }
+    &-nowPlaying {
+        text-align: center;
+        &-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: $headerColor;
+        }
+        &-content {
+            font-size: 18px;
+            margin-top: 8px;
+            font-weight: bold;
+        }
+    }
+}

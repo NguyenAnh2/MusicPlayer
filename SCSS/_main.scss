@@ -1,0 +1,94 @@
+
+
+.main {
+    &-img {
+        @include flexCenter("center");
+        margin: 32px 0 48px;
+    }
+    &-img img {
+        display: block;
+        height: $imgWidth;
+        width: $imgWidth;
+        border-radius: 50%;
+        object-fit: cover;
+        user-select: none;
+    }
+    &-time {
+        @include flexCenter("center");
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &-range {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: $imgWidth;
+        height: 3px;
+        background-color: rgb(175, 175, 175);
+        margin-bottom: 12px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    &-control {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 28px;
+        z-index: 10;
+        &-repeat, &-back, &-pause, &-play, &-next, &-random {
+            @include flexCenter;
+            margin-right: 12px;
+            padding: 8px;
+            border-radius: 50%;
+            transition: 0.2s all ease-in-out;
+            cursor: pointer;
+        }
+        &-repeat:hover, &-back:hover, &-pause:hover, &-play:hover, &-next:hover, &-random:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        &-back {
+
+        }
+        
+        &-pause, &-play {
+            @include flexCenter;
+            padding: 8px;
+            border-radius: 50%;
+            background-color:rgba(0, 0, 0, 0.1);
+            font-size: 32px;
+            transition: 0.2 all ease-in-out;
+        }
+        &-pause {
+
+        }
+
+        &-play {
+            
+        }
+        
+        &-next {
+
+        }
+        
+        &-random {
+
+        }
+
+    }
+}
+.none {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+.active {
+    color: $headerColor;
+}
+.active-song {
+    background-color: rgb(211, 211, 211);
+
+}
